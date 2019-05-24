@@ -35269,95 +35269,97 @@ Louis Spohr	Symphony no. 6 in G major, op. 116			\N	\N	\N	\N	\N
 Louis Spohr	Symphony no. 8 in G major, op. 137			\N	\N	\N	\N	\N
 Louis Spohr	Variations on 'Je suis encore dans mon printemps', op. 36			\N	\N	\N	\N	\N
 Antonio Lotti	Motets			\N	\N	\N	\N	\N
-Muzio Clementi	Capriccio op. 17 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Capriccio op. 34, no. 3 in A major			\N	\N	\N	\N	\N
-Muzio Clementi	Capriccio op. 34, no. 4 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Capriccio op. 47, no. 1 in E minor			\N	\N	\N	\N	\N
-Muzio Clementi	Capriccio op. 47, no. 2 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Fantaisie and Variations, op. 48			\N	\N	\N	\N	\N
-Muzio Clementi	Gradus ad Parnassum, Book I			\N	\N	\N	\N	\N
-Muzio Clementi	La chasse, op. 16			\N	\N	\N	\N	\N
-Muzio Clementi	Monferrinas, op. 49			\N	\N	\N	\N	\N
-Muzio Clementi	Musical Characteristics, op. 19			\N	\N	\N	\N	\N
-Muzio Clementi	Orchestral Pieces WoO 36			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Concerto in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata WoO 13 in A-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata WoO 3 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 1, no. 1 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 1, no. 2 in G major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 1, no. 3 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 1, no. 4 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 1, no. 5 in A major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 1, no. 6 in E major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 10, no. 1 in A major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 10, no. 2 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 10, no. 3 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 11, no. 1 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 12, no. 1 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 12, no. 2 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 12, no. 3 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 12, no. 4 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 13, no. 4 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 13, no. 5 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 13, no. 6 in F minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 2, no. 2 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 2, no. 4 in A major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 2, no. 6 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 20 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 23, no. 1 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 23, no. 2 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 23, no. 3 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 24, no. 1 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 24, no. 2 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 25, no. 1 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 25, no. 2 in G major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 25, no. 3 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 25, no. 4 in A major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 25, no. 5 in F-sharp minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 25, no. 6 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 26 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 33, no. 1 in A major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 33, no. 2 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 33, no. 3 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 34, no. 1 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 34, no. 2 in G minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 37, no. 1 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 37, no. 2 in G major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 37, no. 3 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 40, no. 1 in G major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 40, no. 2 in B minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 40, no. 3 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 41 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 46 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 50, no. 1 in A major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 50, no. 2 in D minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 50, no. 3 in G minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 7, no. 1 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 7, no. 2 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 7, no. 3 in G minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 8, no. 1 in G minor			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 8, no. 2 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 8, no. 3 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 9, no. 1 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 9, no. 2 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Piano Sonata op. 9, no. 3 in E-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Rondo in B-flat major, WoO 8			\N	\N	\N	\N	\N
-Muzio Clementi	Sonatina op. 36, no. 1 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Sonatina op. 36, no. 2 in G major			\N	\N	\N	\N	\N
-Muzio Clementi	Sonatina op. 36, no. 3 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Sonatina op. 36, no. 4 in F major			\N	\N	\N	\N	\N
-Muzio Clementi	Sonatina op. 36, no. 5 in G major			\N	\N	\N	\N	\N
-Muzio Clementi	Sonatina op. 36, no. 6 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	Symphony WoO 32 in C major			\N	\N	\N	\N	\N
-Muzio Clementi	Symphony WoO 33 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	Symphony WoO 34 in G major			\N	\N	\N	\N	\N
-Muzio Clementi	Symphony WoO 35 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	Symphony op. 18, no. 1 in B-flat major			\N	\N	\N	\N	\N
-Muzio Clementi	Symphony op. 18, no. 2 in D major			\N	\N	\N	\N	\N
-Muzio Clementi	The Black Joke, WoO 2			\N	\N	\N	\N	\N
-Muzio Clementi	Toccata in B-flat major, op. 11, no. 2			\N	\N	\N	\N	\N
-Muzio Clementi	Variations, WoO 10			\N	\N	\N	\N	\N
-Muzio Clementi	Variations, WoO 5			\N	\N	\N	\N	\N
+Muzio Clementi	Capriccio		17	\N	Bf	\N	\N	1787
+Muzio Clementi	Capriccio		34-3	\N	A	\N	\N	1795
+Muzio Clementi	Capriccio		34-4	\N	F	\N	\N	1795
+Muzio Clementi	Capriccio		47-1	\N	Em	\N	\N	1821
+Muzio Clementi	Capriccio		47-2	\N	C	\N	\N	1821
+Muzio Clementi	Fantasy and Variations		48	\N	Cm	Au Clair de la Lune	\N	1821
+Muzio Clementi	Gradus Ad Parnassum		44	\N	\N	\N	\N	1826
+Muzio Clementi	La chasse		16	\N	D	\N	\N	1786
+Muzio Clementi	Monferrinas		49	\N	\N	\N	\N	1821
+Muzio Clementi	Musical Characteristics		19	\N	\N	\N	\N	1787
+Muzio Clementi	Overture	36-1		\N	C	\N	\N	\N
+Muzio Clementi	Overture	36-2		\N	D	\N	\N	\N
+Muzio Clementi	Minuetto Pastorale	36-3		\N	D	\N	\N	\N
+Muzio Clementi	Piano Concerto	12		\N	C	\N	\N	1796
+Muzio Clementi	Piano Sonata	13		\N	Af	\N	\N	1765
+Muzio Clementi	Piano Sonata	3		\N	F	\N	\N	1789
+Muzio Clementi	Piano Sonata		1-1	\N	Ef	\N	\N	1771
+Muzio Clementi	Piano Sonata		1-2	\N	G	\N	\N	1771
+Muzio Clementi	Piano Sonata		1-3	\N	Bf	\N	\N	1771
+Muzio Clementi	Piano Sonata		1-4	\N	F	\N	\N	1771
+Muzio Clementi	Piano Sonata		1-5	\N	A	\N	\N	1771
+Muzio Clementi	Piano Sonata		1-6	\N	E	\N	\N	1771
+Muzio Clementi	Piano Sonata		10-1	\N	A	\N	\N	1783
+Muzio Clementi	Piano Sonata		10-2	\N	D	\N	\N	1783
+Muzio Clementi	Piano Sonata		10-3	\N	Bf	\N	\N	1783
+Muzio Clementi	Piano Sonata		11-1	\N	Ef	\N	\N	1783
+Muzio Clementi	Piano Sonata		12-1	\N	Bf	\N	\N	1784
+Muzio Clementi	Piano Sonata		12-2	\N	Ef	\N	\N	1784
+Muzio Clementi	Piano Sonata		12-3	\N	F	\N	\N	1784
+Muzio Clementi	Piano Sonata		12-4	\N	Ef	\N	\N	1784
+Muzio Clementi	Piano Sonata		13-4	\N	Bf	\N	\N	1785
+Muzio Clementi	Piano Sonata		13-5	\N	F	\N	\N	1785
+Muzio Clementi	Piano Sonata		13-6	\N	Fm	\N	\N	1785
+Muzio Clementi	Piano Sonata		2-2	\N	C	\N	\N	1779
+Muzio Clementi	Piano Sonata		2-4	\N	A	\N	\N	1779
+Muzio Clementi	Piano Sonata		2-6	\N	Bf	\N	\N	1779
+Muzio Clementi	Piano Sonata		20	\N	C	\N	\N	1787
+Muzio Clementi	Piano Sonata		23-1	\N	Ef	\N	\N	1790
+Muzio Clementi	Piano Sonata		23-2	\N	F	\N	\N	1790
+Muzio Clementi	Piano Sonata		23-3	\N	Ef	\N	\N	1790
+Muzio Clementi	Piano Sonata		24-1	\N	F	\N	\N	1781
+Muzio Clementi	Piano Sonata		24-2	\N	Bf	\N	\N	1781
+Muzio Clementi	Piano Sonata		25-1	\N	C	\N	\N	1790
+Muzio Clementi	Piano Sonata		25-2	\N	G	\N	\N	1790
+Muzio Clementi	Piano Sonata		25-3	\N	Bf	\N	\N	1790
+Muzio Clementi	Piano Sonata		25-4	\N	A	\N	\N	1790
+Muzio Clementi	Piano Sonata		25-5	\N	Fsm	\N	\N	1790
+Muzio Clementi	Piano Sonata		25-6	\N	D	\N	\N	1790
+Muzio Clementi	Piano Sonata		26	\N	F	\N	\N	1791
+Muzio Clementi	Piano Sonata		33-1	\N	A	\N	\N	1794
+Muzio Clementi	Piano Sonata		33-2	\N	F	\N	\N	1794
+Muzio Clementi	Piano Sonata		33-3	\N	C	\N	\N	1794
+Muzio Clementi	Piano Sonata		34-1	\N	C	\N	\N	1795
+Muzio Clementi	Piano Sonata		34-2	\N	Gm	\N	\N	1795
+Muzio Clementi	Piano Sonata		37-1	\N	C	\N	\N	1798
+Muzio Clementi	Piano Sonata		37-2	\N	G	\N	\N	1798
+Muzio Clementi	Piano Sonata		37-3	\N	D	\N	\N	1798
+Muzio Clementi	Piano Sonata		40-1	\N	G	\N	\N	1802
+Muzio Clementi	Piano Sonata		40-2	\N	Bm	\N	\N	1802
+Muzio Clementi	Piano Sonata		40-3	\N	D	\N	\N	1802
+Muzio Clementi	Piano Sonata		41	\N	Ef	\N	\N	1803
+Muzio Clementi	Piano Sonata		46	\N	Bf	\N	\N	1820
+Muzio Clementi	Piano Sonata		50-1	\N	A	\N	\N	1821
+Muzio Clementi	Piano Sonata		50-2	\N	Dm	\N	\N	1821
+Muzio Clementi	Piano Sonata		50-3	\N	Gm	\N	\N	1821
+Muzio Clementi	Piano Sonata		7-1	\N	Ef	\N	\N	1782
+Muzio Clementi	Piano Sonata		7-2	\N	C	\N	\N	1782
+Muzio Clementi	Piano Sonata		7-3	\N	Gm	\N	\N	1782
+Muzio Clementi	Piano Sonata		8-1	\N	Gm	\N	\N	1782
+Muzio Clementi	Piano Sonata		8-2	\N	Ef	\N	\N	1782
+Muzio Clementi	Piano Sonata		8-3	\N	Bf	\N	\N	1782
+Muzio Clementi	Piano Sonata		9-1	\N	Bf	\N	\N	1783
+Muzio Clementi	Piano Sonata		9-2	\N	C	\N	\N	1783
+Muzio Clementi	Piano Sonata		9-3	\N	Ef	\N	\N	1783
+Muzio Clementi	Rondo	8		\N	Bf	\N	\N	1802
+Muzio Clementi	Sonatina		36-1	\N	C	\N	\N	1797
+Muzio Clementi	Sonatina		36-2	\N	G	\N	\N	1797
+Muzio Clementi	Sonatina		36-3	\N	C	\N	\N	1797
+Muzio Clementi	Sonatina		36-4	\N	F	\N	\N	1797
+Muzio Clementi	Sonatina		36-5	\N	G	\N	\N	1797
+Muzio Clementi	Sonatina		36-6	\N	D	\N	\N	1797
+Muzio Clementi	Symphony	32		\N	C	\N	\N	\N
+Muzio Clementi	Symphony	33		\N	D	\N	\N	\N
+Muzio Clementi	Symphony	34		\N	G	\N	\N	\N
+Muzio Clementi	Symphony	35		\N	D	\N	\N	\N
+Muzio Clementi	Symphony		18-1	\N	Bf	\N	\N	1787
+Muzio Clementi	Symphony		18-2	\N	D	\N	\N	1787
+Muzio Clementi	Black Joke	2		\N	C	\N	\N	1780
+Muzio Clementi	Toccata		11-2	\N	Bf	\N	\N	1783
+Muzio Clementi	Variations	10		\N	F	Batti, batti	\N	1820
+Muzio Clementi	Variations	5		\N	Dm	Mr. Collick's Minuet	\N	1793
 Georg Philipp Telemann	Fantasia TWV 40-11 for solo flute in F-sharp minor			\N	\N	\N	\N	\N
 Georg Philipp Telemann	Fantasia TWV 40-3 for solo flute in A minor			\N	\N	\N	\N	\N
 Georg Philipp Telemann	Fantasia TWV 40-4 for solo flute in B minor			\N	\N	\N	\N	\N
