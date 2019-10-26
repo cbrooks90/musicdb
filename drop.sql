@@ -1,0 +1,14 @@
+DROP TABLE opusnumbers;
+DROP TABLE catalognumbers;
+DROP TABLE catalogs;
+DROP TABLE sequences;
+DROP TABLE cycles;
+DROP TABLE indications;
+DROP TABLE adaptations;
+DROP TABLE adapttypes;
+DROP TABLE completionyears;
+DROP TABLE pieceswithkey;
+DROP TABLE keys;
+DROP TABLE subtitles;
+DROP TABLE pieces;
+DROP TABLE composers;
