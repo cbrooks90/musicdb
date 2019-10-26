@@ -59,24 +59,24 @@ COPY pieces (id, composer, title) FROM stdin;
 51	1	Écossaise
 52	1	Écossaise
 53	1	Écossaises
-54	1	
+54	1
 55	1	Variations
 56	1	Contredanse
 57	1	Cantabile
 58	1	Feuille d''album
-59	1	
+59	1
 60	1	Fugue
 61	1	Cello Sonata
 62	1	Introduction and Polonaise brillante
 63	1	Grand Duo concertant
 64	1	Piano Trio
-65	1	
+65	1
 66	1	Scherzo
-67	1	
+67	1
 68	1	Finale
-69	1	
+69	1
 70	1	Scherzo
-71	1	
+71	1
 72	1	Finale
 73	1	Études
 74	1	Études
@@ -235,26 +235,26 @@ COPY pieces (id, composer, title) FROM stdin;
 227	1	Piano Sonata
 228	1	Piano Sonata
 229	1	Piano Sonata
-230	1	
+230	1
 231	1	Menuetto
-232	1	
-233	1	
-234	1	
+232	1
+233	1
+234	1
 235	1	Scherzo
 236	1	Marche funèbre
-237	1	
-238	1	
+237	1
+238	1
 239	1	Scherzo
-240	1	
-241	1	
+240	1
+241	1
 242	1	Piano Concerto
 243	1	Piano Concerto
-244	1	
+244	1
 245	1	Romanze
 246	1	Rondo
-247	1	
-248	1	
-249	1	
+247	1
+248	1
+249	1
 250	1	Variations
 251	1	Introduction
 252	1	Theme
@@ -344,6 +344,9 @@ COPY opusnumbers (piece, opus) FROM stdin;
 260	22
 \.
 
+COPY catalogs (id, composer, title, abbrev) FROM stdin;
+\.
+
 COPY catalognumbers (piece, cat) FROM stdin;
 12	113
 14	14
@@ -382,7 +385,7 @@ COPY catalognumbers (piece, cat) FROM stdin;
 221	36
 \.
 
-COPY collections (piece, parent, num) FROM stdin;
+COPY sequences (piece, parent, num) FROM stdin;
 12	39	6
 20	15	1
 21	15	2
@@ -505,9 +508,6 @@ COPY collections (piece, parent, num) FROM stdin;
 211	206	1
 212	206	2
 213	206	3
-\.
-
-COPY movements (piece, parent, num) FROM stdin;
 65	61	1
 66	61	2
 67	61	3
@@ -605,6 +605,7 @@ COPY adapttypes (name) FROM stdin;
 Variations
 Transcription
 Revision
+Fantasia on Themes
 \.
 
 COPY adaptations (piece, original, adapttype) FROM stdin;
@@ -844,231 +845,226 @@ COPY completionyears (piece, completed) FROM stdin;
 260	1834
 \.
 
-COPY keys (name) FROM stdin;
-C major
-G major
-D major
-A major
-E major
-B major
-F-sharp major
-G-flat major
-D-flat major
-A-flat major
-E-flat major
-B-flat major
-F major
-A minor
-E minor
-B minor
-F-sharp minor
-C-sharp minor
-G-sharp minor
-D-sharp minor
-E-flat minor
-B-flat minor
-F minor
-C minor
-G minor
-D minor
+COPY keys (id, name) FROM stdin;
+c    C major
+g    G major
+d    D major
+a    A major
+e    E major
+b    B major
+fs   F-sharp major
+gf   G-flat major
+df   D-flat major
+af   A-flat major
+ef   E-flat major
+bf   B-flat major
+f    F major
+am   A minor
+em   E minor
+bm   B minor
+fsm  F-sharp minor
+csm  C-sharp minor
+gsm  G-sharp minor
+dsm  D-sharp minor
+efm  E-flat minor
+bfm  B-flat minor
+fm   F minor
+cm   C minor
+gm   G minor
+dm   D minor
 \.
 
 COPY pieceswithkey (piece, keysignature) FROM stdin;
-1	G minor
-2	F major
-3	A-flat major
-4	F minor
-5	E-flat major
-6	C major
-7	C major
-8	B minor
-9	B-flat minor
-10	C-sharp minor
-11	E major
-12	E major
-13	B-flat major
-14	E major
-19	E-flat major
-20	A-flat major
-21	A minor
-22	F major
-23	A-flat major
-24	D-flat major
-25	C-sharp minor
-26	A-flat major
-27	A-flat major
-28	B minor
-29	G-flat major
-30	F minor
-31	D-flat major
-32	A-flat major
-33	E major
-34	E-flat major
-35	E minor
-36	E-flat major
-37	A minor
-38	F-sharp minor
-42	F minor
-43	D-flat major
-44	F-sharp major
-45	C major
-46	A-flat major
-47	C-sharp minor
-48	A major
-49	C minor
-50	D major
-51	G major
-52	D-flat major
-55	A major
-56	G-flat major
-57	B-flat major
-58	E major
-59	E-flat major
-60	A minor
-61	G minor
-62	C major
-63	E major
-64	G minor
-76	C major
-77	A minor
-78	E major
-79	C-sharp minor
-80	G-flat major
-81	E-flat major
-82	C major
-83	F major
-84	F minor
-85	A-flat major
-86	E-flat major
-87	C minor
-88	A-flat major
-89	F minor
-90	F major
-91	A minor
-92	E minor
-93	G-sharp minor
-94	C-sharp minor
-95	D-flat major
-96	G-flat major
-97	B minor
-98	A minor
-99	C minor
-100	F minor
-101	D-flat major
-102	A-flat major
-116	F-sharp minor
-117	C-sharp minor
-118	E major
-119	E-flat minor
-120	B-flat major
-121	A minor
-122	F minor
-123	A-flat major
-124	C major
-125	B-flat major
-126	E minor
-127	A-flat major
-128	A minor
-129	G minor
-130	C major
-131	A-flat major
-132	B-flat minor
-133	C minor
-134	B minor
-135	D-flat major
-136	C-sharp minor
-137	G-sharp minor
-138	D major
-139	C major
-140	B minor
-141	E minor
-142	B major
-143	A-flat major
-144	C-sharp minor
-145	G major
-146	A-flat major
-147	C-sharp minor
-148	B major
-149	C major
-150	C minor
-151	A minor
-152	A-flat major
-153	F-sharp minor
-154	B major
-155	F minor
-156	C-sharp minor
-157	G major
-158	G minor
-159	C major
-160	A minor
-161	C major
-162	A minor
-163	F major
-164	F minor
-165	A minor
-166	A minor
-167	G major
-168	B-flat major
-169	B-flat major
-170	C major
-171	A-flat major
-172	D major
-173	D major
-183	B-flat minor
-184	E-flat major
-185	B major
-186	F major
-187	F-sharp major
-188	G minor
-189	C-sharp minor
-190	D-flat major
-191	B major
-192	A-flat major
-193	G minor
-194	G major
-195	C minor
-196	F-sharp minor
-197	F minor
-198	E-flat major
-199	B major
-200	E major
-201	E minor
-202	C minor
-203	C-sharp minor
-207	C-sharp minor
-208	E-flat major
-209	A major
-210	C minor
-211	D minor
-212	B-flat major
-213	F minor
-214	F-sharp minor
-215	A-flat major
-216	G minor
-217	B-flat major
-218	A-flat major
-219	G-sharp minor
-220	B-flat minor
-221	G-flat major
-222	A-flat major
-223	A-flat major
-224	F-sharp major
-225	G-flat major
-226	C-sharp minor
-227	C minor
-228	B-flat minor
-229	B minor
-242	E minor
-243	F minor
-250	B-flat major
-258	A major
-259	F major
-260	E-flat major
-\.
-
-COPY textauthors (piece, author) FROM stdin;
-40	Jules-Henri Vernoy de Saint-Georges
-41	Jules-Henri Vernoy de Saint-Georges
+1	gm
+2	f
+3	af
+4	fm
+5	ef
+6	c
+7	c
+8	bm
+9	bfm
+10	csm
+11	e
+12	e
+13	bf
+14	e
+19	ef
+20	af
+21	am
+22	f
+23	af
+24	df
+25	csm
+26	af
+27	af
+28	bm
+29	gf
+30	fm
+31	df
+32	af
+33	e
+34	ef
+35	em
+36	ef
+37	am
+38	fsm
+42	fm
+43	df
+44	fs
+45	c
+46	af
+47	csm
+48	a
+49	cm
+50	d
+51	g
+52	df
+55	a
+56	gf
+57	bf
+58	e
+59	ef
+60	am
+61	gm
+62	c
+63	e
+64	gm
+76	c
+77	am
+78	e
+79	csm
+80	gf
+81	ef
+82	c
+83	f
+84	fm
+85	af
+86	ef
+87	cm
+88	af
+89	fm
+90	f
+91	am
+92	em
+93	gsm
+94	csm
+95	df
+96	gf
+97	bm
+98	am
+99	cm
+100	fm
+101	df
+102	af
+116	fsm
+117	csm
+118	e
+119	efm
+120	bf
+121	am
+122	fm
+123	af
+124	c
+125	bf
+126	em
+127	af
+128	am
+129	gm
+130	c
+131	af
+132	bfm
+133	cm
+134	bm
+135	df
+136	csm
+137	gsm
+138	d
+139	c
+140	bm
+141	em
+142	b
+143	af
+144	csm
+145	g
+146	af
+147	csm
+148	b
+149	c
+150	cm
+151	am
+152	af
+153	fsm
+154	b
+155	fm
+156	csm
+157	g
+158	gm
+159	c
+160	am
+161	c
+162	am
+163	f
+164	fm
+165	am
+166	am
+167	g
+168	bf
+169	bf
+170	c
+171	af
+172	d
+173	d
+183	bfm
+184	ef
+185	b
+186	f
+187	fs
+188	gm
+189	csm
+190	df
+191	b
+192	af
+193	gm
+194	g
+195	cm
+196	fsm
+197	fm
+198	ef
+199	b
+200	e
+201	em
+202	cm
+203	csm
+207	csm
+208	ef
+209	a
+210	cm
+211	dm
+212	bf
+213	fm
+214	fsm
+215	af
+216	gm
+217	bf
+218	af
+219	gsm
+220	bfm
+221	gf
+222	af
+223	af
+224	fs
+225	gf
+226	csm
+227	cm
+228	bfm
+229	bm
+242	em
+243	fm
+250	bf
+258	a
+259	f
+260	ef
 \.
 
 COPY subtitles (piece, subtitle) FROM stdin;

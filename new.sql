@@ -12,7 +12,7 @@ CREATE TABLE pieces (
 	title character varying(255) NOT NULL
 )
 
--- Need indexes to make these two unique among composers
+-- Opus numbers are not necessarily unique; see Busoni for example.
 
 CREATE TABLE opusnumbers (
 	piece integer PRIMARY KEY
@@ -20,28 +20,30 @@ CREATE TABLE opusnumbers (
 	opus integer NOT NULL
 )
 
-CREATE TABLE catalognumbers (
-	piece integer PRIMARY KEY
-		REFERENCES pieces ON UPDATE CASCADE,
-	cat character varying(255) NOT NULL
+CREATE TABLE catalogs (
+  id integer PRIMARY KEY,
+  composer integer NOT NULL
+    REFERENCES composers ON UPDATE CASCADE,
+  title character varying(255) NOT NULL,
+  abbrev character varying(8) NOT NULL
 )
 
-CREATE TABLE collections (
+CREATE TABLE catalognumbers (
+	piece integer NOT NULL
+		REFERENCES pieces ON UPDATE CASCADE,
+  cat integer NOT NULL
+    REFERENCES catalogs ON UPDATE CASCADE,
+	num character varying(255) NOT NULL,
+
+  PRIMARY KEY (piece, cat)
+)
+
+CREATE TABLE sequences (
 	piece integer PRIMARY KEY
 		REFERENCES pieces ON UPDATE CASCADE,
 	parent integer NOT NULL
 		REFERENCES pieces ON UPDATE CASCADE,
 	num integer NOT NULL,
-
-	UNIQUE (parent, num)
-)
-
-CREATE TABLE movements (
-	piece integer PRIMARY KEY
-		REFERENCES pieces ON UPDATE CASCADE,
-	parent integer NOT NULL
-		REFERENCES pieces ON UPDATE CASCADE,
-	num integer NOT NULL
 
 	UNIQUE (parent, num)
 )
@@ -83,20 +85,15 @@ CREATE TABLE completionyears (
 )
 
 CREATE TABLE keys (
-	name character varying(255) PRIMARY KEY
+  id character varying(8) PRIMARY KEY,
+	name character varying(255) UNIQUE NOT NULL
 )
 
 CREATE TABLE pieceswithkey (
 	piece integer PRIMARY KEY
 		REFERENCES pieces ON UPDATE CASCADE,
-	keysignature character varying(255) NOT NULL
+	keysignature character varying(8) NOT NULL
 		REFERENCES keys ON UPDATE CASCADE
-)
-
-CREATE TABLE textauthors (
-	piece integer PRIMARY KEY
-		REFERENCES pieces ON UPDATE CASCADE,
-	author character varying(255) NOT NULL
 )
 
 CREATE TABLE subtitles (
@@ -108,9 +105,9 @@ CREATE TABLE subtitles (
 ALTER TABLE composers OWNER TO chris;
 ALTER TABLE pieces OWNER TO chris;
 ALTER TABLE opusnumbers OWNER TO chris;
+ALTER TABLE catalogs OWNER TO chris;
 ALTER TABLE catalognumbers OWNER TO chris;
-ALTER TABLE collections OWNER TO chris;
-ALTER TABLE movements OWNER TO chris;
+ALTER TABLE sequences OWNER TO chris;
 ALTER TABLE cycles OWNER TO chris;
 ALTER TABLE indications OWNER TO chris;
 ALTER TABLE adapttypes OWNER TO chris;
@@ -118,7 +115,4 @@ ALTER TABLE adaptations OWNER TO chris;
 ALTER TABLE completionyears OWNER TO chris;
 ALTER TABLE keys OWNER TO chris;
 ALTER TABLE pieceswithkey OWNER TO chris;
-ALTER TABLE textauthors OWNER TO chris;
 ALTER TABLE subtitles OWNER TO chris;
-
--- Need a constraint that says a piece has either cat, opus, or was adapted
