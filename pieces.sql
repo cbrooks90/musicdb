@@ -345,44 +345,45 @@ COPY opusnumbers (piece, opus) FROM stdin;
 \.
 
 COPY catalogs (id, composer, title, abbrev) FROM stdin;
+1	1	Brown	B
 \.
 
-COPY catalognumbers (piece, cat) FROM stdin;
-12	113
-14	14
-32	21
-33	44
-34	46
-35	56
-36	133
-37	150
-39	392
-49	20
-53	12
-55	37
-56	17
-57	84
-58	151
-59	109
-60	144
-63	70
-75	130
-174	16
-165	140
-166	134
-169	73
-170	82
-171	85
-172	31
-173	71
-202	108
-203	49
-216	1
-217	3
-218	5
-219	6
-220	13
-221	36
+COPY catalognumbers (piece, cat, num) FROM stdin;
+12	113	1
+14	14	1
+32	21	1
+33	44	1
+34	46	1
+35	56	1
+36	133	1
+37	150	1
+39	392	1
+49	20	1
+53	12	1
+55	37	1
+56	17	1
+57	84	1
+58	151	1
+59	109	1
+60	144	1
+63	70	1
+75	130	1
+174	16	1
+165	140	1
+166	134	1
+169	73	1
+170	82	1
+171	85	1
+172	31	1
+173	71	1
+202	108	1
+203	49	1
+216	1	1
+217	3	1
+218	5	1
+219	6	1
+220	13	1
+221	36	1
 \.
 
 COPY sequences (piece, parent, num) FROM stdin;
@@ -846,32 +847,32 @@ COPY completionyears (piece, completed) FROM stdin;
 \.
 
 COPY keys (id, name) FROM stdin;
-c    C major
-g    G major
-d    D major
-a    A major
-e    E major
-b    B major
-fs   F-sharp major
-gf   G-flat major
-df   D-flat major
-af   A-flat major
-ef   E-flat major
-bf   B-flat major
-f    F major
-am   A minor
-em   E minor
-bm   B minor
-fsm  F-sharp minor
-csm  C-sharp minor
-gsm  G-sharp minor
-dsm  D-sharp minor
-efm  E-flat minor
-bfm  B-flat minor
-fm   F minor
-cm   C minor
-gm   G minor
-dm   D minor
+c	C major
+g	G major
+d	D major
+a	A major
+e	E major
+b	B major
+fs	F-sharp major
+gf	G-flat major
+df	D-flat major
+af	A-flat major
+ef	E-flat major
+bf	B-flat major
+f	F major
+am	A minor
+em	E minor
+bm	B minor
+fsm	F-sharp minor
+csm	C-sharp minor
+gsm	G-sharp minor
+dsm	D-sharp minor
+efm	E-flat minor
+bfm	B-flat minor
+fm	F minor
+cm	C minor
+gm	G minor
+dm	D minor
 \.
 
 COPY pieceswithkey (piece, keysignature) FROM stdin;
