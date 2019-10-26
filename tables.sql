@@ -21,21 +21,21 @@ CREATE TABLE opusnumbers (
 )
 
 CREATE TABLE catalogs (
-  id integer PRIMARY KEY,
-  composer integer NOT NULL
-    REFERENCES composers ON UPDATE CASCADE,
-  title character varying(255) NOT NULL,
-  abbrev character varying(8) NOT NULL
+	id integer PRIMARY KEY,
+	composer integer NOT NULL
+		REFERENCES composers ON UPDATE CASCADE,
+	title character varying(255) NOT NULL,
+	abbrev character varying(8) NOT NULL
 )
 
 CREATE TABLE catalognumbers (
 	piece integer NOT NULL
 		REFERENCES pieces ON UPDATE CASCADE,
-  cat integer NOT NULL
-    REFERENCES catalogs ON UPDATE CASCADE,
+	cat integer NOT NULL
+		REFERENCES catalogs ON UPDATE CASCADE,
 	num character varying(255) NOT NULL,
 
-  PRIMARY KEY (piece, cat)
+	PRIMARY KEY (piece, cat)
 )
 
 CREATE TABLE sequences (
@@ -85,7 +85,7 @@ CREATE TABLE completionyears (
 )
 
 CREATE TABLE keys (
-  id character varying(8) PRIMARY KEY,
+	id character varying(8) PRIMARY KEY,
 	name character varying(255) UNIQUE NOT NULL
 )
 
