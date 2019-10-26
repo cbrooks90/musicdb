@@ -101,18 +101,3 @@ CREATE TABLE subtitles (
 		REFERENCES pieces ON UPDATE CASCADE,
 	subtitle character varying(255) NOT NULL
 )
-
-ALTER TABLE composers OWNER TO chris;
-ALTER TABLE pieces OWNER TO chris;
-ALTER TABLE opusnumbers OWNER TO chris;
-ALTER TABLE catalogs OWNER TO chris;
-ALTER TABLE catalognumbers OWNER TO chris;
-ALTER TABLE sequences OWNER TO chris;
-ALTER TABLE cycles OWNER TO chris;
-ALTER TABLE indications OWNER TO chris;
-ALTER TABLE adapttypes OWNER TO chris;
-ALTER TABLE adaptations OWNER TO chris;
-ALTER TABLE completionyears OWNER TO chris;
-ALTER TABLE keys OWNER TO chris;
-ALTER TABLE pieceswithkey OWNER TO chris;
-ALTER TABLE subtitles OWNER TO chris;
