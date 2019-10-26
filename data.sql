@@ -5,269 +5,269 @@ COPY composers (id, name, birthdate, dateerror) FROM stdin;
 4	Ferdinand Hérold	1791-01-28	0
 \.
 
-COPY pieces (id, composer, title) FROM stdin;
-1	1	Ballade
-2	1	Ballade
-3	1	Ballade
-4	1	Ballade
-5	1	Rondo
-6	1	Rondo
-7	1	Rondo
-8	1	Scherzo
-9	1	Scherzo
-10	1	Scherzo
-11	1	Scherzo
-12	1	Variation
-13	1	Variations
-14	1	Variations
-15	1	Valses
-16	1	Valses
-17	1	Valses
-18	1	Valses
-19	1	Valse
-20	1	Valse
-21	1	Valse
-22	1	Valse
-23	1	Valse
-24	1	Valse
-25	1	Valse
-26	1	Valse
-27	1	Valse
-28	1	Valse
-29	1	Valse
-30	1	Valse
-31	1	Valse
-32	1	Valse
-33	1	Valse
-34	1	Valse
-35	1	Valse
-36	1	Valse
-37	1	Valse
-38	2	Valse-étude mélancolique
-39	3	Hexameron
-40	4	Ludovic
-41	4	Aria
-42	1	Fantaisie
-43	1	Berceuse
-44	1	Barcarolle
-45	1	Bolero
-46	1	Tarantella
-47	1	Prelude
-48	1	Allegro de concert
-49	1	Marche funèbre
-50	1	Écossaise
-51	1	Écossaise
-52	1	Écossaise
-53	1	Écossaises
-54	1
-55	1	Variations
-56	1	Contredanse
-57	1	Cantabile
-58	1	Feuille d''album
-59	1
-60	1	Fugue
-61	1	Cello Sonata
-62	1	Introduction and Polonaise brillante
-63	1	Grand Duo concertant
-64	1	Piano Trio
-65	1
-66	1	Scherzo
-67	1
-68	1	Finale
-69	1
-70	1	Scherzo
-71	1
-72	1	Finale
-73	1	Études
-74	1	Études
-75	1	Trois nouvelles études
-76	1	Étude
-77	1	Étude
-78	1	Étude
-79	1	Étude
-80	1	Étude
-81	1	Étude
-82	1	Étude
-83	1	Étude
-84	1	Étude
-85	1	Étude
-86	1	Étude
-87	1	Étude
-88	1	Étude
-89	1	Étude
-90	1	Étude
-91	1	Étude
-92	1	Étude
-93	1	Étude
-94	1	Étude
-95	1	Étude
-96	1	Étude
-97	1	Étude
-98	1	Étude
-99	1	Étude
-100	1	Étude
-101	1	Étude
-102	1	Étude
-103	1	Mazurkas
-104	1	Mazurkas
-105	1	Mazurkas
-106	1	Mazurkas
-107	1	Mazurkas
-108	1	Mazurkas
-109	1	Mazurkas
-110	1	Mazurkas
-111	1	Mazurkas
-112	1	Mazurkas
-113	1	Mazurkas
-114	1	Mazurkas
-115	1	Mazurkas
-116	1	Mazurka
-117	1	Mazurka
-118	1	Mazurka
-119	1	Mazurka
-120	1	Mazurka
-121	1	Mazurka
-122	1	Mazurka
-123	1	Mazurka
-124	1	Mazurka
-125	1	Mazurka
-126	1	Mazurka
-127	1	Mazurka
-128	1	Mazurka
-129	1	Mazurka
-130	1	Mazurka
-131	1	Mazurka
-132	1	Mazurka
-133	1	Mazurka
-134	1	Mazurka
-135	1	Mazurka
-136	1	Mazurka
-137	1	Mazurka
-138	1	Mazurka
-139	1	Mazurka
-140	1	Mazurka
-141	1	Mazurka
-142	1	Mazurka
-143	1	Mazurka
-144	1	Mazurka
-145	1	Mazurka
-146	1	Mazurka
-147	1	Mazurka
-148	1	Mazurka
-149	1	Mazurka
-150	1	Mazurka
-151	1	Mazurka
-152	1	Mazurka
-153	1	Mazurka
-154	1	Mazurka
-155	1	Mazurka
-156	1	Mazurka
-157	1	Mazurka
-158	1	Mazurka
-159	1	Mazurka
-160	1	Mazurka
-161	1	Mazurka
-162	1	Mazurka
-163	1	Mazurka
-164	1	Mazurka
-165	1	Mazurka
-166	1	Mazurka
-167	1	Mazurka
-168	1	Mazurka
-169	1	Mazurka
-170	1	Mazurka
-171	1	Mazurka
-172	1	Mazurka
-173	1	Mazurka
-174	1	Mazurkas
-175	1	Nocturnes
-176	1	Nocturnes
-177	1	Nocturnes
-178	1	Nocturnes
-179	1	Nocturnes
-180	1	Nocturnes
-181	1	Nocturnes
-182	1	Nocturnes
-183	1	Nocturne
-184	1	Nocturne
-185	1	Nocturne
-186	1	Nocturne
-187	1	Nocturne
-188	1	Nocturne
-189	1	Nocturne
-190	1	Nocturne
-191	1	Nocturne
-192	1	Nocturne
-193	1	Nocturne
-194	1	Nocturne
-195	1	Nocturne
-196	1	Nocturne
-197	1	Nocturne
-198	1	Nocturne
-199	1	Nocturne
-200	1	Nocturne
-201	1	Nocturne
-202	1	Nocturne
-203	1	Nocturne
-204	1	Polonaises
-205	1	Polonaises
-206	1	Polonaises
-207	1	Polonaise
-208	1	Polonaise
-209	1	Polonaise
-210	1	Polonaise
-211	1	Polonaise
-212	1	Polonaise
-213	1	Polonaise
-214	1	Polonaise
-215	1	Polonaise
-216	1	Polonaise
-217	1	Polonaise
-218	1	Polonaise
-219	1	Polonaise
-220	1	Polonaise
-221	1	Polonaise
-222	1	Polonaise-Fantaisie
-223	1	Impromptu
-224	1	Impromptu
-225	1	Impromptu
-226	1	Fantaisie-Impromptu
-227	1	Piano Sonata
-228	1	Piano Sonata
-229	1	Piano Sonata
-230	1
-231	1	Menuetto
-232	1
-233	1
-234	1
-235	1	Scherzo
-236	1	Marche funèbre
-237	1
-238	1
-239	1	Scherzo
-240	1
-241	1
-242	1	Piano Concerto
-243	1	Piano Concerto
-244	1
-245	1	Romanze
-246	1	Rondo
-247	1
-248	1
-249	1
-250	1	Variations
-251	1	Introduction
-252	1	Theme
-253	1	Variation
-254	1	Variation
-255	1	Variation
-256	1	Variation
-257	1	Variation
-258	1	Grande fantaisie sur des airs polonais
-259	1	Rondo à la Krakowiak
-260	1	Andante spianato et grande polonaise brillante
-261	1	Andante spianato
-262	1	Polonaise brillante
+COPY pieces (id, title, composer) FROM stdin;
+1	Ballade	1
+2	Ballade	1
+3	Ballade	1
+4	Ballade	1
+5	Rondo	1
+6	Rondo	1
+7	Rondo	1
+8	Scherzo	1
+9	Scherzo	1
+10	Scherzo	1
+11	Scherzo	1
+12	Variation	1
+13	Variations	1
+14	Variations	1
+15	Valses	1
+16	Valses	1
+17	Valses	1
+18	Valses	1
+19	Valse	1
+20	Valse	1
+21	Valse	1
+22	Valse	1
+23	Valse	1
+24	Valse	1
+25	Valse	1
+26	Valse	1
+27	Valse	1
+28	Valse	1
+29	Valse	1
+30	Valse	1
+31	Valse	1
+32	Valse	1
+33	Valse	1
+34	Valse	1
+35	Valse	1
+36	Valse	1
+37	Valse	1
+38	Valse-étude mélancolique	2
+39	Hexameron	3
+40	Ludovic	4
+41	Aria	4
+42	Fantaisie	1
+43	Berceuse	1
+44	Barcarolle	1
+45	Bolero	1
+46	Tarantella	1
+47	Prelude	1
+48	Allegro de concert	1
+49	Marche funèbre	1
+50	Écossaise	1
+51	Écossaise	1
+52	Écossaise	1
+53	Écossaises	1
+54		1
+55	Variations	1
+56	Contredanse	1
+57	Cantabile	1
+58	Feuille d''album	1
+59		1
+60	Fugue	1
+61	Cello Sonata	1
+62	Introduction and Polonaise brillante	1
+63	Grand Duo concertant	1
+64	Piano Trio	1
+65		1
+66	Scherzo	1
+67		1
+68	Finale	1
+69		1
+70	Scherzo	1
+71		1
+72	Finale	1
+73	Études	1
+74	Études	1
+75	Trois nouvelles études	1
+76	Étude	1
+77	Étude	1
+78	Étude	1
+79	Étude	1
+80	Étude	1
+81	Étude	1
+82	Étude	1
+83	Étude	1
+84	Étude	1
+85	Étude	1
+86	Étude	1
+87	Étude	1
+88	Étude	1
+89	Étude	1
+90	Étude	1
+91	Étude	1
+92	Étude	1
+93	Étude	1
+94	Étude	1
+95	Étude	1
+96	Étude	1
+97	Étude	1
+98	Étude	1
+99	Étude	1
+100	Étude	1
+101	Étude	1
+102	Étude	1
+103	Mazurkas	1
+104	Mazurkas	1
+105	Mazurkas	1
+106	Mazurkas	1
+107	Mazurkas	1
+108	Mazurkas	1
+109	Mazurkas	1
+110	Mazurkas	1
+111	Mazurkas	1
+112	Mazurkas	1
+113	Mazurkas	1
+114	Mazurkas	1
+115	Mazurkas	1
+116	Mazurka	1
+117	Mazurka	1
+118	Mazurka	1
+119	Mazurka	1
+120	Mazurka	1
+121	Mazurka	1
+122	Mazurka	1
+123	Mazurka	1
+124	Mazurka	1
+125	Mazurka	1
+126	Mazurka	1
+127	Mazurka	1
+128	Mazurka	1
+129	Mazurka	1
+130	Mazurka	1
+131	Mazurka	1
+132	Mazurka	1
+133	Mazurka	1
+134	Mazurka	1
+135	Mazurka	1
+136	Mazurka	1
+137	Mazurka	1
+138	Mazurka	1
+139	Mazurka	1
+140	Mazurka	1
+141	Mazurka	1
+142	Mazurka	1
+143	Mazurka	1
+144	Mazurka	1
+145	Mazurka	1
+146	Mazurka	1
+147	Mazurka	1
+148	Mazurka	1
+149	Mazurka	1
+150	Mazurka	1
+151	Mazurka	1
+152	Mazurka	1
+153	Mazurka	1
+154	Mazurka	1
+155	Mazurka	1
+156	Mazurka	1
+157	Mazurka	1
+158	Mazurka	1
+159	Mazurka	1
+160	Mazurka	1
+161	Mazurka	1
+162	Mazurka	1
+163	Mazurka	1
+164	Mazurka	1
+165	Mazurka	1
+166	Mazurka	1
+167	Mazurka	1
+168	Mazurka	1
+169	Mazurka	1
+170	Mazurka	1
+171	Mazurka	1
+172	Mazurka	1
+173	Mazurka	1
+174	Mazurkas	1
+175	Nocturnes	1
+176	Nocturnes	1
+177	Nocturnes	1
+178	Nocturnes	1
+179	Nocturnes	1
+180	Nocturnes	1
+181	Nocturnes	1
+182	Nocturnes	1
+183	Nocturne	1
+184	Nocturne	1
+185	Nocturne	1
+186	Nocturne	1
+187	Nocturne	1
+188	Nocturne	1
+189	Nocturne	1
+190	Nocturne	1
+191	Nocturne	1
+192	Nocturne	1
+193	Nocturne	1
+194	Nocturne	1
+195	Nocturne	1
+196	Nocturne	1
+197	Nocturne	1
+198	Nocturne	1
+199	Nocturne	1
+200	Nocturne	1
+201	Nocturne	1
+202	Nocturne	1
+203	Nocturne	1
+204	Polonaises	1
+205	Polonaises	1
+206	Polonaises	1
+207	Polonaise	1
+208	Polonaise	1
+209	Polonaise	1
+210	Polonaise	1
+211	Polonaise	1
+212	Polonaise	1
+213	Polonaise	1
+214	Polonaise	1
+215	Polonaise	1
+216	Polonaise	1
+217	Polonaise	1
+218	Polonaise	1
+219	Polonaise	1
+220	Polonaise	1
+221	Polonaise	1
+222	Polonaise-Fantaisie	1
+223	Impromptu	1
+224	Impromptu	1
+225	Impromptu	1
+226	Fantaisie-Impromptu	1
+227	Piano Sonata	1
+228	Piano Sonata	1
+229	Piano Sonata	1
+230		1
+231	Menuetto	1
+232		1
+233		1
+234		1
+235	Scherzo	1
+236	Marche funèbre	1
+237		1
+238		1
+239	Scherzo	1
+240		1
+241		1
+242	Piano Concerto	1
+243	Piano Concerto	1
+244		1
+245	Romanze	1
+246	Rondo	1
+247		1
+248		1
+249		1
+250	Variations	1
+251	Introduction	1
+252	Theme	1
+253	Variation	1
+254	Variation	1
+255	Variation	1
+256	Variation	1
+257	Variation	1
+258	Grande fantaisie sur des airs polonais	1
+259	Rondo à la Krakowiak	1
+260	Andante spianato et grande polonaise brillante	1
+261	Andante spianato	1
+262	Polonaise brillante	1
 \.
 
 COPY opusnumbers (piece, opus) FROM stdin;
@@ -349,41 +349,41 @@ COPY catalogs (id, composer, title, abbrev) FROM stdin;
 \.
 
 COPY catalognumbers (piece, cat, num) FROM stdin;
-12	113	1
-14	14	1
-32	21	1
-33	44	1
-34	46	1
-35	56	1
-36	133	1
-37	150	1
-39	392	1
-49	20	1
-53	12	1
-55	37	1
-56	17	1
-57	84	1
-58	151	1
-59	109	1
-60	144	1
-63	70	1
-75	130	1
-174	16	1
-165	140	1
-166	134	1
-169	73	1
-170	82	1
-171	85	1
-172	31	1
-173	71	1
-202	108	1
-203	49	1
+12	1	113
+14	1	14
+32	1	21
+33	1	44
+34	1	46
+35	1	56
+36	1	133
+37	1	150
+39	1	392
+49	1	20
+53	1	12
+55	1	37
+56	1	17
+57	1	84
+58	1	151
+59	1	109
+60	1	144
+63	1	70
+75	1	130
+174	1	16
+165	1	140
+166	1	134
+169	1	73
+170	1	82
+171	1	85
+172	1	31
+173	1	71
+202	1	108
+203	1	49
 216	1	1
-217	3	1
-218	5	1
-219	6	1
-220	13	1
-221	36	1
+217	1	3
+218	1	5
+219	1	6
+220	1	13
+221	1	36
 \.
 
 COPY sequences (piece, parent, num) FROM stdin;
@@ -602,18 +602,18 @@ COPY indications (piece, num, indication) FROM stdin;
 257	2	Alla Polacca
 \.
 
-COPY adapttypes (name) FROM stdin;
-Variations
-Transcription
-Revision
-Fantasia on Themes
+COPY adapttypes (id, name) FROM stdin;
+1	Variations
+2	Transcription
+3	Revision
+4	Fantasia on Themes
 \.
 
 COPY adaptations (piece, original, adapttype) FROM stdin;
-13	41	Variations
-7	6	Transcription
-173	172	Revision
---250	?	Variations
+13	41	1
+7	6	2
+173	172	3
+--250	?	1
 \.
 
 COPY completionyears (piece, completed) FROM stdin;
