@@ -1,6 +1,6 @@
 const fields = {}
 
-const makeInput = (name, size) => {
+const makeInput = (name, arg, size) => {
 	const label = document.createElement("label");
 	const input = document.createElement("input");
 
@@ -12,7 +12,9 @@ const makeInput = (name, size) => {
 		input.setAttribute("size", size);
 	}
 
-	fields[name] = input
+	fields[name] = {};
+	fields[name].element = input;
+	fields[name].argument = arg;
 
 	const div = document.createElement("div");
 	div.appendChild(label);
@@ -21,11 +23,31 @@ const makeInput = (name, size) => {
 	return div;
 }
 
+
+
+async function fetchAsync(url, data) {
+	const response = await fetch(url, {
+		method: 'POST',
+		headers: {
+			'Accept': 'application/json',
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify(data)
+	});
+	const content = await response.json();
+	alert(JSON.stringify(content));
+}
+
 const search = () => {
+	const data = {};
+
 	for (const property in fields) {
-		const value = encodeURIComponent(fields[property].value);
-		alert(value);
+		const argName = fields[property].argument;
+		const value = fields[property].element.value;
+		data[argName] = value.length === 0 ? null : encodeURIComponent(value);
 	}
+
+	fetchAsync('http://localhost:3001/rpc/search', data);
 }
 
 window.onload = () => {
@@ -45,7 +67,10 @@ window.onload = () => {
 		document.body.appendChild(div);
 	};
 
-	rows[0].appendChild(makeInput("Name"));
-	rows[0].appendChild(makeInput("#", 2));
-	rows[1].appendChild(makeInput("Composer"));
+	rows[0].appendChild(makeInput("Composer", "composer"));
+	rows[0].appendChild(makeInput("Catalog", "cat"))
+	rows[1].appendChild(makeInput("Name", "title"));
+	rows[1].appendChild(makeInput("Op.", "opus", 2))
+	rows[1].appendChild(makeInput("Cat.", "catnum", 2))
+	rows[1].appendChild(makeInput("#", "seqnum", 2));
 }
