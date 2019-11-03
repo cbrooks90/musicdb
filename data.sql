@@ -1,11 +1,11 @@
-COPY composers (id, name, birthdate, dateerror) FROM stdin;
+COPY music.composers (id, name, birthdate, dateerror) FROM stdin;
 1	Frédéric Chopin	1810-03-10	0
 2	Charles Mayer	1799-03-21	0
 3	Franz Liszt	1811-10-22	0
 4	Ferdinand Hérold	1791-01-28	0
 \.
 
-COPY pieces (id, title, composer) FROM stdin;
+COPY music.pieces (id, title, composer) FROM stdin;
 1	Ballade	1
 2	Ballade	1
 3	Ballade	1
@@ -18,13 +18,13 @@ COPY pieces (id, title, composer) FROM stdin;
 10	Scherzo	1
 11	Scherzo	1
 12	Variation	1
-13	Variations	1
+13	Variations brillantes	1
 14	Variations	1
-15	Valses	1
+15	Grandes valses brillantes	1
 16	Valses	1
 17	Valses	1
 18	Valses	1
-19	Valse	1
+19	Grande valse brillante	1
 20	Valse	1
 21	Valse	1
 22	Valse	1
@@ -43,10 +43,10 @@ COPY pieces (id, title, composer) FROM stdin;
 35	Valse	1
 36	Valse	1
 37	Valse	1
-38	Valse-étude mélancolique	2
+38	Le Régret, valse-étude mélancolique	2
 39	Hexameron	3
 40	Ludovic	4
-41	Aria	4
+41	Je vends des scapulaires	4
 42	Fantaisie	1
 43	Berceuse	1
 44	Barcarolle	1
@@ -60,7 +60,7 @@ COPY pieces (id, title, composer) FROM stdin;
 52	Écossaise	1
 53	Écossaises	1
 54		1
-55	Variations	1
+55	Variations, Souvenir de Paganini	1
 56	Contredanse	1
 57	Cantabile	1
 58	Feuille d''album	1
@@ -268,9 +268,15 @@ COPY pieces (id, title, composer) FROM stdin;
 260	Andante spianato et grande polonaise brillante	1
 261	Andante spianato	1
 262	Polonaise brillante	1
+433	Ballades	1
+434	Scherzos	1
+435	Impromptus	1
+436	Piano Sonatas	1
+437	Piano Concertos	1
+438	Variations	1
 \.
 
-COPY opusnumbers (piece, opus) FROM stdin;
+COPY music.opus_numbers (piece, opus) FROM stdin;
 1	23
 2	38
 3	47
@@ -344,11 +350,11 @@ COPY opusnumbers (piece, opus) FROM stdin;
 260	22
 \.
 
-COPY catalogs (id, composer, title, abbrev) FROM stdin;
+COPY music.catalogs (id, composer, title, abbrev) FROM stdin;
 1	1	Brown	B
 \.
 
-COPY catalognumbers (piece, cat, num) FROM stdin;
+COPY music.catalog_numbers (piece, cat, num) FROM stdin;
 12	1	113
 14	1	14
 32	1	21
@@ -386,7 +392,7 @@ COPY catalognumbers (piece, cat, num) FROM stdin;
 221	1	36
 \.
 
-COPY sequences (piece, parent, num) FROM stdin;
+COPY music.pieces_in_sequence (piece, parent, num) FROM stdin;
 12	39	6
 20	15	1
 21	15	2
@@ -399,7 +405,6 @@ COPY sequences (piece, parent, num) FROM stdin;
 29	18	1
 30	18	2
 31	18	3
---41	40	?
 49	54	2
 50	53	1
 51	53	2
@@ -535,88 +540,48 @@ COPY sequences (piece, parent, num) FROM stdin;
 247	243	1
 248	243	2
 249	243	3
-251	250	-1
-252	250	0
-253	250	1
-254	250	2
-255	250	3
-256	250	4
-257	250	5
+251	250	1
+252	250	2
+253	438	1
+254	438	2
+255	438	3
+256	438	4
+257	438	5
 261	260	1
 262	260	2
+1	433	1
+2	433	2
+3	433	3
+4	433	4
+8	434	1
+9	434	2
+10	434	3
+11	434	4
+223	435	1
+224	435	2
+225	435	3
+227	436	1
+228	436	2
+229	436	3
+242	437	1
+243	437	2
+438	250	3
 \.
 
-COPY cycles (piece, num) FROM stdin;
-1	1
-2	2
-3	3
-4	4
-8	1
-9	2
-10	3
-11	4
-223	1
-224	2
-225	3
-227	1
-228	2
-229	3
-242	1
-243	2
-\.
-
-COPY indications (piece, num, indication) FROM stdin;
-59	1	Largo
-65	1	Allegro moderato
-66	1	Allegro con brio
-67	1	Largo
-68	1	Allegro
-69	1	Allegro con fuoco
-70	1	Con moto, ma non troppo
-71	1	Adagio sostenuto
-72	1	Allegretto
-100	1	Andantino
-101	1	Allegretto
-102	1	Allegretto
-230	1	Allegro maestoso
-232	1	Larghetto
-233	1	Presto
-234	1	Grave
-234	2	Doppio movimento
-237	1	Presto
-238	1	Allegro maestoso
-240	1	Largo
-241	1	Presto non tanto
-244	1	Allegro maestoso
-245	1	Larghetto
-246	1	Vivace
-247	1	Maestoso
-248	1	Larghetto
-249	1	Allegro vivace
-251	1	Largo
-251	2	Poco più mosso
-252	1	Allegretto
-253	1	Brillante
-254	1	Veloce ma accuratamente
-257	1	Adagio
-257	2	Alla Polacca
-\.
-
-COPY adapttypes (id, name) FROM stdin;
+COPY music.adaptation_types (id, name) FROM stdin;
 1	Variations
 2	Transcription
 3	Revision
 4	Fantasia on Themes
 \.
 
-COPY adaptations (piece, original, adapttype) FROM stdin;
+COPY music.adaptations (piece, original, adaptation_type) FROM stdin;
 13	41	1
 7	6	2
 173	172	3
---250	?	1
 \.
 
-COPY completionyears (piece, completed) FROM stdin;
+COPY music.completion_years (piece, completed) FROM stdin;
 1	1836
 2	1839
 3	1841
@@ -846,7 +811,7 @@ COPY completionyears (piece, completed) FROM stdin;
 260	1834
 \.
 
-COPY keys (id, name) FROM stdin;
+COPY music.keys (id, name) FROM stdin;
 c	C major
 g	G major
 d	D major
@@ -875,7 +840,7 @@ gm	G minor
 dm	D minor
 \.
 
-COPY pieceswithkey (piece, keysignature) FROM stdin;
+COPY music.pieces_with_key (piece, key_signature) FROM stdin;
 1	gm
 2	f
 3	af
@@ -1066,13 +1031,4 @@ COPY pieceswithkey (piece, keysignature) FROM stdin;
 258	a
 259	f
 260	ef
-\.
-
-COPY subtitles (piece, subtitle) FROM stdin;
-15	Trois grandes valses brillantes
-19	Grande valse brillante
-24	Minute Waltz
-38	Le Régret
-41	Je vends des scapulaires
-55	Souvenir de Paganini
 \.
