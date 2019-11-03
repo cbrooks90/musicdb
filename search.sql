@@ -8,7 +8,7 @@ CREATE OR REPLACE FUNCTION music.search_composer(search varchar)
 			ON p.composer = c.id AND music.word_similarity(search, c.name) > 0.5;
 		END IF;
 	END
-	$$ LANGUAGE plpgsql;
+	$$ LANGUAGE plpgsql STABLE;
 
 CREATE OR REPLACE FUNCTION music.search_title(search varchar)
 	RETURNS SETOF music.pieces AS $$
@@ -19,7 +19,7 @@ CREATE OR REPLACE FUNCTION music.search_title(search varchar)
 			WHERE music.word_similarity(search, p.title) > 0.5;
 		END IF;
 	END
-	$$ LANGUAGE plpgsql;
+	$$ LANGUAGE plpgsql STABLE;
 
 CREATE OR REPLACE FUNCTION music.search_opus(search integer)
 	RETURNS SETOF music.pieces AS $$
@@ -31,7 +31,7 @@ CREATE OR REPLACE FUNCTION music.search_opus(search integer)
 			ON o.piece = p.id AND search = o.opus;
 		END IF;
 	END
-	$$ LANGUAGE plpgsql;
+	$$ LANGUAGE plpgsql STABLE;
 
 CREATE OR REPLACE FUNCTION music.search_cat(search varchar)
 	RETURNS SETOF music.pieces AS $$
@@ -47,7 +47,7 @@ CREATE OR REPLACE FUNCTION music.search_cat(search varchar)
 			OR music.word_similarity(search, c.title) > 0.5);
 		END IF;
 	END
-	$$ LANGUAGE plpgsql;
+	$$ LANGUAGE plpgsql STABLE;
 
 CREATE OR REPLACE FUNCTION music.search_catnum(search varchar)
 	RETURNS SETOF music.pieces AS $$
@@ -59,7 +59,7 @@ CREATE OR REPLACE FUNCTION music.search_catnum(search varchar)
 			ON cn.piece = p.id AND music.word_similarity(search, cn.num) > 0.5;
 		END IF;
 	END
-	$$ LANGUAGE plpgsql;
+	$$ LANGUAGE plpgsql STABLE;
 
 CREATE OR REPLACE FUNCTION music.search_seqnum(search integer)
 	RETURNS SETOF music.pieces AS $$
@@ -71,9 +71,15 @@ CREATE OR REPLACE FUNCTION music.search_seqnum(search integer)
 			ON s.piece = p.id AND search = s.num;
 		END IF;
 	END
-	$$ LANGUAGE plpgsql;
+	$$ LANGUAGE plpgsql STABLE;
 
-CREATE OR REPLACE FUNCTION music.search(composer varchar, title varchar, opus integer, cat varchar, catnum varchar, seqnum integer)
+CREATE OR REPLACE FUNCTION music.search(
+	composer varchar DEFAULT NULL,
+	title varchar DEFAULT NULL,
+	opus integer DEFAULT NULL,
+	cat varchar DEFAULT NULL,
+	catnum varchar DEFAULT NULL,
+	seqnum integer DEFAULT NULL)
 	RETURNS SETOF music.pieces AS $$
 		SELECT music.search_composer(composer) INTERSECT
 		SELECT music.search_title(title) INTERSECT
@@ -81,4 +87,4 @@ CREATE OR REPLACE FUNCTION music.search(composer varchar, title varchar, opus in
 		SELECT music.search_cat(cat) INTERSECT
 		SELECT music.search_catnum(catnum) INTERSECT
 		SELECT music.search_seqnum(seqnum)
-	$$ LANGUAGE sql;
+	$$ LANGUAGE sql STABLE;
