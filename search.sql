@@ -5,7 +5,7 @@ CREATE OR REPLACE FUNCTION music.search_composer(search varchar)
 		ELSE
 			RETURN QUERY SELECT p.* FROM music.pieces p
 			INNER JOIN music.composers c
-			ON p.composer = c.id AND music.word_similarity(search, c.name) > 0.5;
+			ON p.composer = c.id AND music.word_similarity(search, c.name) >= 0.5;
 		END IF;
 	END
 	$$ LANGUAGE plpgsql STABLE;
@@ -16,7 +16,7 @@ CREATE OR REPLACE FUNCTION music.search_title(search varchar)
 		IF search IS NULL THEN RETURN QUERY SELECT p.* FROM music.pieces p;
 		ELSE
 			RETURN QUERY SELECT p.* FROM music.pieces p
-			WHERE music.word_similarity(search, p.title) > 0.5;
+			WHERE music.word_similarity(search, p.title) >= 0.5;
 		END IF;
 	END
 	$$ LANGUAGE plpgsql STABLE;
@@ -43,8 +43,8 @@ CREATE OR REPLACE FUNCTION music.search_cat(search varchar)
 			ON cn.piece = p.id
 			INNER JOIN music.catalogs c
 			ON cn.cat = c.id
-			AND (music.word_similarity(search, c.abbrev) > 0.5
-			OR music.word_similarity(search, c.title) > 0.5);
+			AND (music.word_similarity(search, c.abbrev) >= 0.5
+			OR music.word_similarity(search, c.title) >= 0.5);
 		END IF;
 	END
 	$$ LANGUAGE plpgsql STABLE;
@@ -56,7 +56,7 @@ CREATE OR REPLACE FUNCTION music.search_catnum(search varchar)
 		ELSE
 			RETURN QUERY SELECT p.* FROM music.pieces p
 			INNER JOIN music.catalog_numbers cn
-			ON cn.piece = p.id AND music.word_similarity(search, cn.num) > 0.5;
+			ON cn.piece = p.id AND music.word_similarity(search, cn.num) >= 0.5;
 		END IF;
 	END
 	$$ LANGUAGE plpgsql STABLE;
